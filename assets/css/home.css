@@ -1,0 +1,180 @@
+body { 
+    font-family: 'Fira Sans';
+    font-family: 'Raleway';
+}
+
+/* img{
+    object-fit: cover;
+    height: fit-content;
+} */
+/* 
+#mainNavbar {
+  background-color: rgb(76, 112, 190);
+  padding: 0.5rem 2rem 0 2rem;
+  background-color: rgba(76, 112, 190, 0.4);
+  height: 2.5rem;
+}
+
+.navbar li {
+  color: rgba(255, 255, 255, 0.9);
+} */
+
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 25s linear infinite; 
+}
+
+.slideshow li h1{
+  color: #17a2b8;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 35vh;
+  font-family: 'Raleway';
+  font-weight: 500;
+  letter-spacing: 0.7rem;
+  margin: 0 0.5rem; 
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px  #fff, -2px -2px 0px  #fff, 2px -2px 0px  #fff, -2px 2px 0px  #fff;
+}
+
+#knowbutton {
+  font-family: 'Fira Sans';
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 1px #fff;
+  padding-top: 75vh;
+  opacity: 0.9;
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url("/Users/archit/Desktop/Website/assets/css/images/rawpixel.jpg"); 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url("/Users/archit/Desktop/Website/assets/css/images/adeolu.jpg");
+  animation-delay: 5s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url("/Users/archit/Desktop/Website/assets/css/images/rawpixel3.jpg");
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url("/Users/archit/Desktop/Website/assets/css/images/connect1.jpg");
+  animation-delay: 15s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url("/Users/archit/Desktop/Website/assets/css/images/getmoredone.jpg");
+  animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .slideshow li h1{
+    padding-top: 40vh;
+    font-size: 3rem;    
+  }
+}
+
+/* 
+.carousel-caption {
+  padding-bottom: 10vh;
+
+}
+
+.carousel-caption h4{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(243, 39, 83);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.45rem;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-bottom: 27vh;
+}
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 760px;
+  margin-right: 10px;
+} */
+/* 
+@media screen and ( min-width: 768px ) {
+  half-width cells for larger devices
+  .carousel-cell { width: 100%; }
+}
+
+position dots up a bit
+dots are lines
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 0.8;
+} */

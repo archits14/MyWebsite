@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Archit Saxena</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/app.css">        
+        <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700|Lato:300,400,700|Ubuntu:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+     
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md fixed-top">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">Home</a>
+            </div>
+    
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navLinks">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="skills.html" class="nav-link">Skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                          </li>
+                    </ul>
+                </div>   
+  </nav>
+
+  <div id="contactcover" class="jumbotron"></div>
+  
+<!-- <section class="site"> -->
+  <section id="sitecontent" class="container-fluid col-sm-10">
+      <div class="row" id="pageheading">
+        <h1>Connect with me</h1>
+      </div>
+
+      <h5>Get in touch with me to get a stunning website for you or your organisation.
+      You can either fill up the request form below or call/write to me and I will get back to you at the earliest.</h5>
+       
+        <div class="row d-flex">
+
+           <!-- left side panel of the contact details -->
+           <div class="col-md-6" id="requestform">
+              <h3 id="reqheading">Submit your request</h3><br>
+              <form id="contact-form">
+                  
+        
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+                      </div>
+                      <input type="text" name="name" placeholder="  Name">
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="far fa-envelope"></i></span>
+                      </div>
+                      <input type="text" name="email" placeholder="  EMail ID">
+                  </div>
+        
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                      </div>
+                      <input type="text" name="contact" placeholder="  Phone No.">
+                  </div>
+        
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-align-justify"></i></span>
+                      </div>
+                      <textarea name="message" rows="7" cols="29" placeholder="  Type in your message here.."></textarea>
+                  </div>
+  
+                  <div>
+                      <button class="btn btn-primary" type="submit" id="submit-form">Submit</button>
+                  </div>
+                </form>
+            </div>
+
+          <!-- right side panel of the contact details -->
+          <div class="col-md-6" id="mydetails">
+            <h3>ARCHIT SAXENA</h3><br><br>
+            <h4>+91 - 95353 77011</h4>
+            <h4><a href="mailto:connect@architsaxena.in" target="_top">connect@architsaxena.in</a></h4>
+          </div>
+
+         
+        </div>
+
+
+    </section>
+
+    
+
+
+
+  <nav id="footer" class="d-flex text-center justify-content-center">
+    <div class="d-flex align-items-center">
+        <span><i class="far fa-copyright"></i> Archit Saxena (2018)</span>
+    </div>
+  </nav>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+        $(function() {
+            $(document).scroll(function(){
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > ($nav.height() * 3) );
+            })
+        })
+        var $form = $('form#contact-form');
+        var url = 'https://script.google.com/macros/s/AKfycbwyyShSjSa2SKB2sAwK1lY2m2r-gvlIxmCKYkAS88F9xH0sRKc/exec';
+        console.log("FORM : " + $form);
+        console.log("FORM JSON : " + JSON.stringify(($form).serialize()));
+          $('#submit-form').on('click', function(e) {
+            // console.log('submit clicked');
+            e.preventDefault();
+            var jqxhr = $.ajax({
+              url: url,
+              method: "GET",
+              dataType: "json",
+              data: JSON.stringify($($form).serialize()),
+              success: function () {
+                // console.log("yipiee");
+              }
+            });
+          });
+
+    </script>
+
+    </body>
+</html>
